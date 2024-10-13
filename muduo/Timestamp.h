@@ -1,9 +1,9 @@
 /*
  * @Author: Kgksdt
  * @Date: 2024-10-13 12:34:20
- * @LastEditTime: 2024-10-13 14:04:02
+ * @LastEditTime: 2024-10-13 17:40:21
  * @Description: 时间类
- * @FilePath: /muduo/Timestamp.h
+ * @FilePath: /muduo/muduo/Timestamp.h
  */
 
 #pragma once
@@ -29,7 +29,10 @@ public:
     
     explicit
     Timestamp(int64_t microSecondsSinceEpochArg)
-        : microSecondsSinceEpoch_(microSecondsSinceEpochArg) {}
+        : microSecondsSinceEpoch_(microSecondsSinceEpochArg) 
+    {
+        //std::cout << "this is Timestamp(int64_t)" << microSecondsSinceEpoch_ << std::endl;
+    }
 
     /**
      * @brief 交换时间戳
@@ -101,6 +104,7 @@ public:
      */
     static Timestamp fromUnixTime(time_t t)
     {
+        //std::cout << "this is Timestamp::fromUnixTime(time_t)" << std::endl;
         return fromUnixTime(t, 0);
     }
 
@@ -112,6 +116,7 @@ public:
      */
     static Timestamp fromUnixTime(time_t t, int microseconds)
     {
+        //std::cout << "this is Timestamp::fromUnixTime(time_t, int)" << std::endl;
         return Timestamp(static_cast<int64_t>(t) * kMicroSecondsPerSecond + microseconds);
     }
 
