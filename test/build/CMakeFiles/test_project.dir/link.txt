@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/test_project.dir/testTimestamp.cc.o -o test_project   -L/home/tanheran/mymuduo/test/../lib  -Wl,-rpath,/home/tanheran/mymuduo/test/../lib -lmymuduo 

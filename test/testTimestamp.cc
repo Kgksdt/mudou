@@ -1,14 +1,22 @@
 /*
  * @Author: Kgksdt
  * @Date: 2024-10-13 17:08:55
- * @LastEditTime: 2024-10-13 17:26:30
+ * @LastEditTime: 2024-10-14 00:55:09
  * @Description: 
- * @FilePath: /muduo/test/testTimestamp.cc
+ * @FilePath: /mymuduo/test/testTimestamp.cc
  */
 #include <iostream>
-#include "../muduo/Timestamp.h"
+#include <memory>
+#include <functional>
+#include "Timestamp.h"
 
+using AddCallback = std::function<int(int, int)>;
+
+void add(int a, int b, AddCallback addcallback)
+{
+    std::cout << "a + b = " << a + b << " a * b = " << addcallback(a,b) << std::endl;
+}
 int main()
 {
-    std::cout << Timestamp::now().toFormattedString() << std::endl;
+    add(3,4,[](int x, int y){return x * y;});
 }
