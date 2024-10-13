@@ -1,7 +1,7 @@
 /*
  * @Author: Kgksdt
  * @Date: 2024-10-13 02:26:43
- * @LastEditTime: 2024-10-13 03:56:40
+ * @LastEditTime: 2024-10-13 13:33:08
  * @Description: 
  * @FilePath: /muduo/logger.cc
  */
@@ -11,7 +11,7 @@
 #include "Logger.h"
 
 /**
- * @brief: 获取日志唯一实例 (单例模式)
+ * @brief 获取日志唯一实例 (单例模式)
  * @return 返回一个Logger实例的引用
  */
 Logger& Logger::instance()
@@ -21,7 +21,7 @@ Logger& Logger::instance()
 }
 
 /**
- * @brief: 设置日志级别
+ * @brief 设置日志级别
  * @param {int} lev要设置的日志级别
  */
 void Logger::setLogLevel(int lev)
@@ -30,8 +30,8 @@ void Logger::setLogLevel(int lev)
 }
 
 /**
- * @brief: 
- * @param {string} msg 打印信息
+ * @brief 打印信息
+ * @param {string} msg 要打印的信息
  *  [级别信息] time : msg
  */
 void Logger::log(const std::string& msg)
