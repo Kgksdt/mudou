@@ -6,6 +6,11 @@
 },
 {
   "directory": "/home/tanheran/mymuduo/build",
+  "command": "/usr/bin/g++ -Dmymuduo_EXPORTS   -g -std=c++11 -g -fPIC -o CMakeFiles/mymuduo.dir/DefaultPoller.cc.o -c /home/tanheran/mymuduo/DefaultPoller.cc",
+  "file": "/home/tanheran/mymuduo/DefaultPoller.cc"
+},
+{
+  "directory": "/home/tanheran/mymuduo/build",
   "command": "/usr/bin/g++ -Dmymuduo_EXPORTS   -g -std=c++11 -g -fPIC -o CMakeFiles/mymuduo.dir/EventLoop.cc.o -c /home/tanheran/mymuduo/EventLoop.cc",
   "file": "/home/tanheran/mymuduo/EventLoop.cc"
 },
@@ -13,6 +18,11 @@
   "directory": "/home/tanheran/mymuduo/build",
   "command": "/usr/bin/g++ -Dmymuduo_EXPORTS   -g -std=c++11 -g -fPIC -o CMakeFiles/mymuduo.dir/InetAddress.cc.o -c /home/tanheran/mymuduo/InetAddress.cc",
   "file": "/home/tanheran/mymuduo/InetAddress.cc"
+},
+{
+  "directory": "/home/tanheran/mymuduo/build",
+  "command": "/usr/bin/g++ -Dmymuduo_EXPORTS   -g -std=c++11 -g -fPIC -o CMakeFiles/mymuduo.dir/Poller.cc.o -c /home/tanheran/mymuduo/Poller.cc",
+  "file": "/home/tanheran/mymuduo/Poller.cc"
 },
 {
   "directory": "/home/tanheran/mymuduo/build",
