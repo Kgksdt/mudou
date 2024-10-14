@@ -1,11 +1,11 @@
 /*
  * @Author: Kgksdt
  * @Date: 2024-10-14 21:23:31
- * @LastEditTime: 2024-10-14 21:25:50
+ * @LastEditTime: 2024-10-14 22:35:39
  * @Description:实现newDefaultPoller
  * @FilePath: /mymuduo/DefaultPoller.cc
  */
-#pragma once
+
 #include <stdlib.h>
 
 #include "Poller.h"
@@ -20,6 +20,6 @@ Poller* Poller::newDefaultPoller(EventLoop *loop)
     else
     {
         //生成epoll的实例
-        return nullptr
+        return nullptr;
     }
 }

@@ -177,6 +177,30 @@ DefaultPoller.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/DefaultPoller.cc.s
 .PHONY : DefaultPoller.cc.s
 
+EPollPoller.o: EPollPoller.cc.o
+.PHONY : EPollPoller.o
+
+# target to build an object file
+EPollPoller.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/EPollPoller.cc.o
+.PHONY : EPollPoller.cc.o
+
+EPollPoller.i: EPollPoller.cc.i
+.PHONY : EPollPoller.i
+
+# target to preprocess a source file
+EPollPoller.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/EPollPoller.cc.i
+.PHONY : EPollPoller.cc.i
+
+EPollPoller.s: EPollPoller.cc.s
+.PHONY : EPollPoller.s
+
+# target to generate assembly for a file
+EPollPoller.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/EPollPoller.cc.s
+.PHONY : EPollPoller.cc.s
+
 EventLoop.o: EventLoop.cc.o
 .PHONY : EventLoop.o
 
@@ -336,6 +360,9 @@ help:
 	@echo "... DefaultPoller.o"
 	@echo "... DefaultPoller.i"
 	@echo "... DefaultPoller.s"
+	@echo "... EPollPoller.o"
+	@echo "... EPollPoller.i"
+	@echo "... EPollPoller.s"
 	@echo "... EventLoop.o"
 	@echo "... EventLoop.i"
 	@echo "... EventLoop.s"

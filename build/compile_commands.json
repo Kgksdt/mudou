@@ -11,6 +11,11 @@
 },
 {
   "directory": "/home/tanheran/mymuduo/build",
+  "command": "/usr/bin/g++ -Dmymuduo_EXPORTS   -g -std=c++11 -g -fPIC -o CMakeFiles/mymuduo.dir/EPollPoller.cc.o -c /home/tanheran/mymuduo/EPollPoller.cc",
+  "file": "/home/tanheran/mymuduo/EPollPoller.cc"
+},
+{
+  "directory": "/home/tanheran/mymuduo/build",
   "command": "/usr/bin/g++ -Dmymuduo_EXPORTS   -g -std=c++11 -g -fPIC -o CMakeFiles/mymuduo.dir/EventLoop.cc.o -c /home/tanheran/mymuduo/EventLoop.cc",
   "file": "/home/tanheran/mymuduo/EventLoop.cc"
 },

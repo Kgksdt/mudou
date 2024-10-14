@@ -45,7 +45,7 @@ private:
     int revents_;
 
     /**
-     * @brief eventloop里的channel的下标
+     * @brief eventloop里的channel状态
      */
     int index_;
 
