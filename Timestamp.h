@@ -1,9 +1,9 @@
 /*
  * @Author: Kgksdt
  * @Date: 2024-10-13 12:34:20
- * @LastEditTime: 2024-10-13 17:40:21
+ * @LastEditTime: 2024-10-14 21:07:46
  * @Description: 时间类
- * @FilePath: /muduo/muduo/Timestamp.h
+ * @FilePath: /mymuduo/Timestamp.h
  */
 
 #pragma once
@@ -36,7 +36,7 @@ public:
 
     /**
      * @brief 交换时间戳
-     * @param {Timestamp} &that 交换的对象 
+     * @param Timestamp &that 交换的对象 
      */
     void swap(Timestamp &that)
     {
@@ -51,7 +51,7 @@ public:
     
     /**
      * @brief 打印时间
-     * @param {bool} showMicroseconds 是否开启打印毫秒
+     * @param bool showMicroseconds 是否开启打印毫秒
      * @return {string} 打印详细时间
      */    
     std::string toFormattedString(bool showMicroseconds = true) const;
@@ -99,7 +99,7 @@ public:
 
     /**
      * @brief 用秒构造函数
-     * @param {time_t} t 当前秒数
+     * @param time_t t 当前秒数
      * @return {Timestamp} 带参构造
      */
     static Timestamp fromUnixTime(time_t t)
@@ -110,8 +110,8 @@ public:
 
     /**
      * @brief 用秒+毫秒构造函数
-     * @param {time_t} t 当前秒数
-     * @param {int} microseconds 当前毫秒数
+     * @param time_t t 当前秒数
+     * @param int microseconds 当前毫秒数
      * @return {Timestamp}  带参构造
      */
     static Timestamp fromUnixTime(time_t t, int microseconds)

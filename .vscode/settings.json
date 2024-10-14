@@ -72,7 +72,8 @@
         "mutex": "cpp",
         "semaphore": "cpp",
         "stop_token": "cpp",
-        "thread": "cpp"
+        "thread": "cpp",
+        "defaultpoller,cc": "c"
     },
     "cmake.sourceDirectory": "/home/tanheran/mymuduo"
 }

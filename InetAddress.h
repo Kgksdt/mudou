@@ -1,7 +1,7 @@
 /*
  * @Author: Kgksdt
  * @Date: 2024-10-13 22:17:10
- * @LastEditTime: 2024-10-13 23:54:47
+ * @LastEditTime: 2024-10-14 21:08:56
  * @Description: 地址类
  * @FilePath: /mymuduo/InetAddress.h
  */
@@ -44,15 +44,15 @@ public:
    
     /**
      * @brief 传入ip和port
-     * @param {uint16_t} port 端口
-     * @param {string} ip IP地址(默认127.0.0.1)
+     * @param uint16_t port 端口
+     * @param string ip IP地址(默认127.0.0.1)
      */
     explicit
     InetAddress(uint16_t port, std::string ip = "127.0.0.1");
 
     /**
      * @brief: sockaddr构造
-     * @param {sockaddr_in} &addr 
+     * @param sockaddr_in &addr 
      */
     explicit 
     InetAddress(const sockaddr_in &addr) 

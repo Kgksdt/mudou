@@ -1,9 +1,9 @@
 /*
  * @Author: Kgksdt
  * @Date: 2024-10-13 02:26:37
- * @LastEditTime: 2024-10-13 13:32:04
+ * @LastEditTime: 2024-10-14 21:08:25
  * @Description: 日志
- * @FilePath: /muduo/Logger.h
+ * @FilePath: /mymuduo/Logger.h
  */
 #pragma once
 
@@ -53,7 +53,7 @@ public:
 
     /**
      * @brief 打印信息
-     * @param {string} msg 要打印的信息
+     * @param string msg 要打印的信息
      *  [级别信息] time : msg
      */
     void log(const std::string& msg);
