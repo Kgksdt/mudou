@@ -1,7 +1,7 @@
 /*
  * @Author: Kgksdt
  * @Date: 2024-10-14 00:00:50
- * @LastEditTime: 2024-10-14 21:09:34
+ * @LastEditTime: 2024-10-15 17:56:56
  * @Description: 类似于通道
  * @FilePath: /mymuduo/Channel.h
  */
@@ -92,6 +92,7 @@ public:
     void disableReading() {events_ &= ~KReadEvent; update();}
     void enableWritng() {events_ |= KWriteEvent; update();}
     void disableWritng() {events_ &= ~KWriteEvent; update();}
+    void disableAll() {events_=KNoneEvent; update();}
 
     void set_revents(int revt) { revents_ = revt;}
 

@@ -1,7 +1,7 @@
 /*
  * @Author: Kgksdt
  * @Date: 2024-10-14 00:00:46
- * @LastEditTime: 2024-10-14 18:25:23
+ * @LastEditTime: 2024-10-15 18:52:31
  * @Description: 类对象函数实现
  * @FilePath: /mymuduo/Channel.cc
  */
@@ -35,13 +35,13 @@ void Channel::tie(const std::shared_ptr<void> &obj)
 void Channel::update()
 {
     // 通过channel所属的EventLoop, 调用EventLoop方法
-    //loop_->updateChannel(this);
+    loop_->updataChannel(this);
 }
 
 void Channel::remove()
 {
-        // 通过channel所属的EventLoop, 调用EventLoop方法
-    //loop_->removeChannel(this);
+    // 通过channel所属的EventLoop, 调用EventLoop方法
+    loop_->removeChannel(this);
 }
 
 void Channel::handleEvent(Timestamp receiveTime)
